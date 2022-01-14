@@ -13,13 +13,66 @@ img {
     margin: 0 auto;
 }
 
+/* header */
+header {
+    position: sticky;
+}
+
+header .blog-title h2 {
+    font-size: 30px;
+}
+
+header nav {
+    width: 100%;
+    background-color: black;
+    padding-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+}
+
+
+/* article */
 .new-article {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 .new-article article{
     width: 32%;
+}
+
+article {
+    text-align: center;
+}
+
+article p {
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+article a {
+    text-decoration: none;
+    color: black;
+}
+
+article a::after {
+    content: "";
+    display: block;
+    width: 25%;
+    background-color: black;
+    height: 2px;
+    margin: 0 auto;
 }
