@@ -5,7 +5,7 @@
 }
 
 img {
-    max-width: 100%;
+    max-width: 95%;
 }
 
 .wrapper {
@@ -86,8 +86,7 @@ article a::after {
     margin: 0 auto;
 }
 
-/* main aside section */
-
+/* main section */
 .container {
     display: flex;
     justify-content: space-between;
@@ -99,6 +98,10 @@ main {
 
 main article {
     margin-bottom: 50px;
+}
+
+main .blog-title {
+    font-size: 30px;
 }
 
 main ul {
@@ -117,9 +120,46 @@ main img {
 
 main .article-intro {
     text-align: center;
-    padding: 10px 40px 30px 40px;
+    padding: 10px 85px 30px 40px;
 }
 
+/* aside section */
 aside {
     flex: 0.33;
 }
+
+aside .author {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.author h4 {
+    margin: 20px;
+}
+
+.author p {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+aside .ranking h4{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ranking-article a {
+    text-align: center;
+    text-decoration: none;
+    color:black;
+}
+
+.ranking-article a img {
+    padding: 5px;
+}
+
+.ranking-article p {
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
