@@ -11,21 +11,28 @@ img {
 .wrapper {
     max-width: 1300px;
     margin: 0 auto;
+    padding: 0 16px;
 }
 
 /* header */
 header {
-    position: sticky;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 10;
 }
 
-header .blog-title h2 {
+header h2 {
+    padding: 15px;
     font-size: 30px;
+    font-weight: 500;
 }
 
 header nav {
     width: 100%;
     background-color: black;
     padding-bottom: 10px;
+    padding-left: 20px;
 }
 
 header nav ul {
@@ -35,10 +42,12 @@ header nav ul {
 header nav ul li {
     display: inline-block;
     margin-top: 10px;
+    margin-right: 40px;
 }
 
 header nav ul li a {
     text-decoration: none;
+    color: white;
 }
 
 
@@ -47,15 +56,13 @@ header nav ul li a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 10px;
+    padding-top: 150px;
+    margin-bottom: 70px;
+    text-align: center;
 }
 
 .new-article article{
     width: 32%;
-}
-
-article {
-    text-align: center;
 }
 
 article p {
@@ -66,13 +73,53 @@ article p {
 article a {
     text-decoration: none;
     color: black;
+    display: block;
+    margin-top: 10px;
 }
 
 article a::after {
     content: "";
     display: block;
-    width: 25%;
+    width: 80px;
     background-color: black;
-    height: 2px;
+    height: 1px;
     margin: 0 auto;
+}
+
+/* main aside section */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    flex: 0.66;
+}
+
+main article {
+    margin-bottom: 50px;
+}
+
+main ul {
+    list-style:none;
+    display: flex;
+    padding: 10px 0 10px 0;
+}
+
+main ul li {
+    margin-right: 40px;
+}
+
+main img {
+    width: 100%;
+}
+
+main .article-intro {
+    text-align: center;
+    padding: 10px 40px 30px 40px;
+}
+
+aside {
+    flex: 0.33;
 }
