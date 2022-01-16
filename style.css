@@ -163,3 +163,29 @@ aside .ranking h4{
     margin-bottom: 10px;
 }
 
+/* archive */
+.archive {
+    margin-top: 40px;
+}
+
+.archive h4 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.archive ul {
+    list-style: none;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.archive ul li {
+    padding: 25px;
+    border-top: 1px solid black;
+}
+
+.archive ul li a {
+    text-decoration: none;
+    color: black;
+}
+
