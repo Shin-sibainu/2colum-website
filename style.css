@@ -177,6 +177,7 @@ aside .ranking h4{
     list-style: none;
     width: 80%;
     margin: 0 auto;
+    border-bottom: 1px solid black;
 }
 
 .archive ul li {
@@ -189,3 +190,28 @@ aside .ranking h4{
     color: black;
 }
 
+/* メディアクエリ設定 */
+@media screen and (max-width: 768px) {
+    .new-article {
+        flex-direction: column;
+    }
+
+    .new-article article {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    main article img{
+       width: 100%;
+       margin-left: 15px;
+    }
+
+    aside .ranking img {
+        width: 100%;
+        margin-left: 15px;
+    }
+}
